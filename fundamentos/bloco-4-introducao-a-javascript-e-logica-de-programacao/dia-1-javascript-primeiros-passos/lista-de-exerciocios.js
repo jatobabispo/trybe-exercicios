@@ -3,6 +3,7 @@ const b = 4;
 const c = 8;
 const triangulo = 180;
 var pecaXadrez = "Rei";
+let nota = 45;
 
 
 //Atividade 1
@@ -96,3 +97,25 @@ switch (pecaXadrez.toLowerCase()) {
 
 //Atividade 7
 console.log("Atividade 7");
+console.log("O percentual do aluno foi "+nota+"%");
+
+if ( nota > 100 || nota < 0) {
+    console.log("Digite uma nota válida entre 0 e 100!");
+} else if ( nota >= 90 ) {
+    nota = "A";
+    console.log("Conceito A");
+} else if ( nota >= 80) {
+    nota = "B";
+    console.log("Conceito = B");
+} else if ( nota >= 70) {
+    console.log("Conceito = C");
+} else if ( nota >= 60) {
+    console.log("Conceito = D");
+} else if ( nota >= 50) {
+    console.log("Conceito = E");
+} else {
+    console.log("Conceito = F");
+}
+
+//Atividade 8
+console.log("Atividade 8");

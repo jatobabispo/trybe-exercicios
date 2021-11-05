@@ -1,6 +1,7 @@
 const a = 6;
 const b = 4;
 const c = 8;
+const triangulo = 180;
 
 //Atividade 1
 console.log("Atividade 1:");
@@ -39,3 +40,25 @@ if ((a >= b && a > c)||(a > b && a >= c)){
 } else {
     console.log("Numeros inválidos");
 } 
+
+//Atividade 4
+
+console.log("Atividade 4:");
+
+if (a > 0) {
+    console.log("Numero em A é Positivo");
+} else if ( a == 0) {
+    console.log("Numero em A é Zero");
+} else {
+    console.log("Numero em A é Negativo");
+}
+
+//Atividade 5
+
+console.log("Atividade 5:");
+
+if (a+b+c != triangulo){
+    console.log("Não é um triangulo");
+} else {
+    console.log("É um triangulo");
+}

@@ -2,6 +2,8 @@ const a = 6;
 const b = 4;
 const c = 8;
 const triangulo = 180;
+var pecaXadrez = "Rei";
+
 
 //Atividade 1
 console.log("Atividade 1:");
@@ -62,3 +64,35 @@ if (a+b+c != triangulo){
 } else {
     console.log("É um triangulo");
 }
+
+//Atividade 6
+
+console.log("Atividade 6:");
+console.log("Qual peça de xadrez você quer informação? "+pecaXadrez);
+
+
+switch (pecaXadrez.toLowerCase()) {
+    case "bispo":
+        console.log("Só pula em diagonal");
+        break;
+    case "torre":
+        console.log("Anda vertical ou horizontal quantas casa desejar");
+        break;
+    case "rainha":
+        console.log("Anda em todas as direções quantas casa quiser");
+        break;
+    case "rei":
+        console.log("Anda um casa em qualquer direção!");
+        break;
+    case "peao":
+        console.log("Anda 1 casa, exceto na primeira jogada, e come em diagonal pra frente.");
+        break;
+    case "cavalo":
+        console.log("Anda em L dois passos nao diagonal e mais um passo lateral");
+        break;
+    default:
+        console.log("Escolha uma peça válida!");
+}
+
+//Atividade 7
+console.log("Atividade 7");

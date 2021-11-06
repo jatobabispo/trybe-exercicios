@@ -4,7 +4,10 @@ const c = 8;
 const triangulo = 180;
 var pecaXadrez = "Rei";
 let nota = 45;
-
+let lucro = 0;
+let salario = 3000;
+let inss = 0;
+let ir = 0;
 
 //Atividade 1
 console.log("Atividade 1:");
@@ -119,3 +122,54 @@ if ( nota > 100 || nota < 0) {
 
 //Atividade 8
 console.log("Atividade 8");
+console.log("Tem número par?: ")
+if ( a % 2 == 0 || b % 2 == 0 || c % 2 == 0 ) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+//Atividade 9
+console.log("Atividade 9");
+console.log("Tem número impar?: ")
+if ( a % 2 == 1 || b % 2 == 1 || c % 2 == 1 ) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+//Atividade 10
+console.log("Atividade 10");
+
+lucro = ((c - (b*1.2))*1000); // C é o preço e B o custo somado aos 20% do imposto.
+
+console.log("Esse é o lucro da venda de 1000 unidades: R$"+lucro);
+
+//Atividade 11
+console.log("Atividade 11");
+
+//INSS
+if (salario <= 1556.94 ) {
+    inss = salario * 0.08;
+} else if ( salario < 2594.92 ) {
+    inss = salario * 0.09;
+} else if ( salario < 5189.82 ) {
+    inss = salario * 0.11;
+} else {
+    inss = 570.88;
+}
+
+
+//IR
+if ((salario-inss) <= 1903.98 ) {
+    ir = 0;
+} else if ((salario-inss) <= 2826.65 ) {
+    ir = ((salario-inss)*0.075)-142.80;
+} else if ((salario-inss) <= 3751.05 ) {
+    ir = ((salario-inss)*0.15)-354.80;
+} else if ((salario-inss) <= 4664.68 ) {
+    ir = ((salario-inss)*0.225)-636.13;
+} else if ((salario-inss) > 4664.68 ) {
+    ir = ((salario-inss)*0.275)-869.36;
+}
+console.log("Salario a receber: "+((salario-inss)-ir));

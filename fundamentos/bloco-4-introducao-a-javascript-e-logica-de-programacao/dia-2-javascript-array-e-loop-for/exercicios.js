@@ -51,3 +51,30 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 console.log("Se houver numeros impares são: "+impares);
+
+//Atividade 7
+
+let menorValor = numbers[0];
+for (let i = 0; i < numbers.length; i+=1) {    
+   if ( menorValor > numbers[i]){
+     menorValor = numbers[i];
+    }    
+}
+console.log("Menor valor é: "+menorValor);
+
+//Atividade 8
+let vinteCinco = [];
+
+for (i = 1; i < 26; i++) {
+    vinteCinco.push([i]);
+    }
+
+console.log(vinteCinco);
+
+//Atividade 9
+
+console.log("A divisão de cada elemento por 2: ");
+
+for ( let dois of vinteCinco) {
+    console.log(dois/2);
+}

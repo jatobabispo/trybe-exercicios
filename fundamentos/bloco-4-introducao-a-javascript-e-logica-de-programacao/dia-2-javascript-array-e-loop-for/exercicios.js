@@ -78,3 +78,8 @@ console.log("A divisão de cada elemento por 2: ");
 for ( let dois of vinteCinco) {
     console.log(dois/2);
 }
+
+//Atividade 10
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+
